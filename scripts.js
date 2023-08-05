@@ -1,13 +1,13 @@
 const cardList = [
     {
         title: "Kitten 2",
-        image: "images/kitten-2.jpg",
+        image: "images/kitten.jpg",
         link: "About Kitten 2",
         desciption: "Demo desciption about kitten 2"
     },
     {
         title: "Kitten 3",
-        image: "images/kitten-3.jpg",
+        image: "images/kitten.jpg",
         link: "About Kitten 3",
         desciption: "Demo desciption about kitten 3"
     }
@@ -29,7 +29,7 @@ const submitForm = () => {
 const addCards = (items) => {
     items.forEach(item => {
         let itemToAppend = '<div class="col s4 center-align">' +
-            '<div class="card medium"><div class="card-image waves-effect waves-block waves-light"><img class="activator" src="' + item.image + '">' +
+            '<div class="card"><div class="card-image waves-effect waves-block waves-light"><img class="activator" src="' + item.image + '">' +
             '</div><div class="card-content">' +
             '<span class="card-title activator grey-text text-darken-4">' + item.title + '<i class="material-icons right">more_vert</i></span><p><a href="#">' + item.link + '</a></p></div>' +
             '<div class="card-reveal">' +
