@@ -29,7 +29,7 @@ const submitForm = () => {
 
 function postCat(cat) {
     $.ajax({
-        url: '/api/cat',
+        url: '/api/cats',
         type: 'POST',
         data:cat,
         success: (result) => {
